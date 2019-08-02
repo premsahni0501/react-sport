@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7a834fa9.chunk.css",
+    "main.js": "/static/js/main.c1adb52a.chunk.js",
+    "main.js.map": "/static/js/main.c1adb52a.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.f17165b1.chunk.css": "/static/css/2.f17165b1.chunk.css",
+    "static/js/2.98c59503.chunk.js": "/static/js/2.98c59503.chunk.js",
+    "static/js/2.98c59503.chunk.js.map": "/static/js/2.98c59503.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7391f984539e7ef94fd95ed1eb58af72.js": "/precache-manifest.7391f984539e7ef94fd95ed1eb58af72.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.f17165b1.chunk.css.map": "/static/css/2.f17165b1.chunk.css.map",
+    "static/css/main.7a834fa9.chunk.css.map": "/static/css/main.7a834fa9.chunk.css.map",
+    "static/media/athletics.svg": "/static/media/athletics.78971d67.svg",
+    "static/media/basketball.jpg": "/static/media/basketball.5bef84ea.jpg",
+    "static/media/cricket.svg": "/static/media/cricket.54c6e5b5.svg",
+    "static/media/hockey.svg": "/static/media/hockey.f3fca2bf.svg",
+    "static/media/kabaddi.svg": "/static/media/kabaddi.291a071d.svg",
+    "static/media/logo.svg": "/static/media/logo.6cb70b1f.svg",
+    "static/media/rugby.svg": "/static/media/rugby.3a2c2ae3.svg",
+    "static/media/soccer.svg": "/static/media/soccer.d2562f8d.svg",
+    "static/media/tennis.jpg": "/static/media/tennis.f7349b04.jpg"
+  }
+}
