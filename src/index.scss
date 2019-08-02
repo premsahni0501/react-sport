@@ -1,0 +1,49 @@
+@import './App.scss';
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('../node_modules/leaflet/dist/leaflet.css');
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.5s ease;
+}
+body.primary{
+  background-color: $primary;
+}
+body.aqua{
+  background-color: $aqua;
+}
+::selection{
+  background-color: yellow;
+  color: #222;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.text-primary{
+  color: $primary-dark !important;
+}
+.text-gray{
+  color: $text-gray !important;
+}
+@media screen and (max-width: 992px){
+  .container{
+    max-width: 90% !important;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #F5F5F5;
+  border-radius: 2px;
+} 
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 2px;
+}

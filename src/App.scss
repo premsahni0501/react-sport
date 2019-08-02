@@ -1,0 +1,250 @@
+@import './assets/scss/variables';
+@import './assets/scss/anim';
+.App{
+  background-color: #FFFDFF;
+  box-shadow: 0 1px 3px transparentize($color: #000000, $amount: 0.9);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+.navbar-brand{
+  color: $primary !important;
+  img{
+    margin-right: 0.5rem;
+    width: 2rem;
+  }
+}
+.resultFragment{
+  min-height: 50vh;
+  height: 100%;
+  overflow-y: auto;
+  color: #fff;
+  border-radius: 1.7rem;
+  position: relative;
+  transition: all 0.5s ease;
+  .leaflet-container{
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    filter: invert(1) saturate(0.75);
+  }
+  .limitButton{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+.resultFragment.aqua{
+  background-color: $aqua;
+}
+.resultFragment.primary{
+  background-color: $primary;
+}
+.steps .list-group-item{
+  cursor: pointer;
+  height: 4.5rem;
+  border: none;
+  border-bottom: 1px solid $text-light !important;
+  margin-bottom: 0 !important;
+  transition: all 0.5s ease;
+  padding-left: 0;
+  padding-right: 0;
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 1rem);
+  }
+  .icon{
+    transition: all 0.5s ease;
+    background-color: $text-light;
+    color: $text-gray;
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.steps .list-group-item:last-child{
+  border: none !important;
+}
+.steps .list-group-item.current {
+  transition: all 0.5s ease;
+  color: $aqua;
+  .icon{
+    transition: all 0.5s ease;
+    background-color: $aqua;
+    color: white;
+  }
+}
+.icon-base{
+  width: 4rem;
+  min-width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: $text-light;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    filter: invert(0.5);
+  }
+}
+.gameFragment{
+  .input-group{
+    .input-group-prepend{
+      width: 2rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #bbb; 
+      span{
+        color: #bbb; 
+      }
+    }
+  }
+  .form-control{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    line-height: 5rem;
+    font-size: 1.25rem;
+  }
+  .form-control:focus{
+    box-shadow: none;
+  }
+  ::placeholder{
+    color: #bbb; 
+  }
+  .gameGrid{
+    padding: 1rem;
+    background: no-repeat center /cover;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    color: #222;
+    overflow: hidden;
+    cursor: pointer;
+
+    h5{
+      font-size: 3vmin;
+    }
+    p{
+      font-size: 2vmin;
+    }
+    >div{
+      margin-left: 0.5rem;
+    }
+  }
+  .gameGrid.image{
+    height: 180px;
+    align-items: flex-end;
+    justify-content: center;
+    >div{
+      margin: 0;
+      h5,p{
+        color: #fff;
+        text-shadow: -2px -2px 8px #222;
+      }
+    }
+  }
+  .masonry{
+    column-count: 2;
+    column-gap: 0.75rem;
+    display: inline-block;
+    width: 100%;
+    max-height: calc(100vh - (60px + 8rem));
+    overflow-x: overlay;
+
+    >.col{
+      break-inside: avoid;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 850px){
+    .masonry{
+      column-count: 1;
+      h5{
+        font-size: 5vmin;
+      }
+      p{
+        font-size: 4vmin;
+      }
+    }
+  }
+}
+.yourTeam{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .modal{
+    position: absolute;
+    color: #222;
+    background-color: #00000057;
+    overflow-y: auto;
+
+    .modal-dialog{
+      max-width: 80%;
+      background: white;
+      border-radius: 1.5rem;
+      pointer-events: all;
+
+      .modal-content{
+        border: none;
+
+        .list-group-item{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.card{
+  border-radius: 1.5rem;
+  border: none;
+  overflow: hidden;
+  text-align: center;
+  color: #444;
+  cursor: pointer;
+
+  .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  p{
+    margin: 0;
+  }
+  .icon-base,
+  h6{
+    color: $primary-dark;
+  }
+  .icon-base{
+    margin-bottom: 1rem;
+  }
+  .card-footer{
+    background-color: #fff;
+    p{
+      color: $primary-dark;
+      small{
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.UpAnim{
+  animation: UpAnim 0.5s ease-out forwards;
+}
+.DownAnim{
+  animation: DownAnim 0.5s ease-out forwards;
+}
+.RightSlideAnim{
+  animation: RightSlideAnim 0.5s ease-out forwards;
+}
+@keyframes UpAnim{
+  0%{
+    opacity: 0;
+    transform: translateY(10px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+@keyframes DownAnim{
+  0%{
+    opacity: 0;
+    transform: translateY(-10px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+@keyframes RightSlideAnim{
+  0%{
+    opacity: 0;
+    transform: translateX(-10px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
