@@ -14,15 +14,15 @@ export const Span = (props) => { return (<span {...props}>{props.children}</span
 
 export const Img = ({ alt, ...props }) => { return (<img {...props} alt="alt" />) }
 
-export const Strong = (props) => { return (<strong {...props}></strong>) }
+export const Strong = (props) => { return (<strong {...props}>{props.children}</strong>) }
 
-export const Button = (props) => { return (<button {...props}></button>) }
+export const Button = (props) => { return (<button {...props}>{props.children}</button>) }
 
 export const Input = (props) => { return (<input {...props} />) }
-export const Label = (props) => { return (<label {...props}></label>) }
+export const Label = (props) => { return (<label {...props}>{props.children}</label>) }
 
-export const Select = (props) => { return (<select {...props}></select>) }
-export const Option = (props) => { return (<option {...props}></option>) }
+export const Select = (props) => { return (<select {...props}>{props.children}</select>) }
+export const Option = (props) => { return (<option {...props}>{props.children}</option>) }
 
 export const Htag = ({ tag, ...props }) => {
   const Heading = `h${tag}`;
