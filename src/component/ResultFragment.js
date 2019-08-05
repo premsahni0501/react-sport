@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Div } from './Elements';
-import { MapWrapper } from './MapWrapper';
-import { GameType } from './GameType';
-import { YourTeam } from './YourTeam';
-import { Payment } from './Payment';
+
+const MapWrapper = lazy(() => import(/* webpackChunkName: 'MapWrapper' */ './MapWrapper'));
+const GameType = lazy(() => import(/* webpackChunkName: 'GameType' */ './GameType'));
+const YourTeam = lazy(() => import(/* webpackChunkName: 'YourTeam' */ './YourTeam'));
+const Payment = lazy(() => import(/* webpackChunkName: 'Payment' */ './Payment'));
 
 export class ResultFragment extends React.Component {
   state = {
@@ -38,7 +39,9 @@ export class ResultFragment extends React.Component {
     if (ResultComp == null) return;
     return (
       <Div className={`container-fluid resultFragment w-100 p-3 ${this.state.currentTab === 'Your Team' || this.state.currentTab === 'payment' ? 'aqua' : 'primary'}`}>
-        {ResultComp}
+        <Suspense fallback={<Div>Connecting to payment gateway...</Div>}>
+          {ResultComp}
+        </Suspense>
       </Div>
     );
   }

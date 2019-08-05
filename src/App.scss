@@ -192,6 +192,10 @@
   height: 100%;
   display: flex;
   align-items: center;
+
+  .card{
+    cursor: pointer;
+  }
   .modal{
     position: absolute;
     color: #222;
@@ -220,7 +224,6 @@
   overflow: hidden;
   text-align: center;
   color: #444;
-  cursor: pointer;
 
   .card-body{
     display: flex;

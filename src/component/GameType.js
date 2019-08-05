@@ -6,7 +6,7 @@ import { gameTypes } from '../App';
 
 const imagesFolder = require.context('../assets/img/', true);
 
-export class GameType extends React.Component {
+export default class GameType extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

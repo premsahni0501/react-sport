@@ -3,9 +3,9 @@ import { Div, Htag, Span, P, Small, Button } from './Elements';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserFriends, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import { gameTypes } from '../App';
-import { SelectTeam } from './SelectTeam';
+import SelectTeam from './SelectTeam';
 
-export class YourTeam extends React.Component {
+export default class YourTeam extends React.Component {
   state = {
     allPlayers: 0,
     allTeams: 0,

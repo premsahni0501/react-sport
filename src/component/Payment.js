@@ -1,7 +1,7 @@
 import React from 'react';
 import { Div, Select, Option, Htag, Input, Label, Button } from './Elements';
 
-export class Payment extends React.Component {
+export default class Payment extends React.Component {
   render() {
     return (
       <Div className="container-fluid resultFragment w-100 p-3 text-left">

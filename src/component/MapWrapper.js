@@ -3,7 +3,7 @@ import { map, tileLayer } from 'leaflet';
 import { Button } from './Elements';
 
 let mapRef = null;
-export class MapWrapper extends React.Component {
+export default class MapWrapper extends React.Component {
   state = {
     lat: 0,
     lng: 0,

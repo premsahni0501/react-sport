@@ -7,7 +7,7 @@ import { ResultFragment } from './component/ResultFragment';
 class App extends React.Component {
   state = {
     location: '',
-    currentTab: 'payment',
+    currentTab: 'location',
     currentGameName: '',
     setTeamName: ''
   }
